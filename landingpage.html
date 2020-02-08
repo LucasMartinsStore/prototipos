@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     <title>Landing Page Exemple</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/landingpage.css">
+</head>
+
+<body>
+    <section>
+        <div class="content">
+            <div>
+                <!--Corpo Personagem-->
+                <h2>Cristiano Ronaldo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero accusantium eveniet laudantium recusandae aut. Provident unde quisquam quidem ad odit! Voluptatibus dignissimos eveniet saepe commodi error reiciendis voluptas laboriosam quae?</p>
+                <a href="#">Leia mais</a>
+            </div>
+        </div> <!--Fim Personagem-->
+
+        <div class="imgBx"> <!--Caixa de image-->
+            <img src="img/21832-2-cristiano-ronaldo-hd.png" alt="Cristiano Ronaldo image">
+        </div> <!--Fim imagem-->
+
+        <ul class="nav" id="nav"> <!--Navegação-->
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Sobre</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Time</a></li>
+            <li><a href="#">Rank</a></li>
+        </ul> <!--Fim navegação-->
+
+        <ul class="social"> <!--Social Media-->
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+<span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+<script>
+    function menuToggle(){
+        var nav = document.getById("nav");
+        nav.classList.toggle('active');
+        var toggle = document.getById("toggle");
+        toggle.classList.toggle('active');
+    } 
+
+</script>
+</body>
+
+</html>
